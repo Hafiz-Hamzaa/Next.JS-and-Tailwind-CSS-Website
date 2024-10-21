@@ -1,0 +1,32 @@
+.heading{
+    text-align: center;
+    font-size: 35px;
+    color: blue;
+    margin-top: 10%;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.loader{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 12px solid blue;
+    border-top: black;
+    margin: 0 auto;
+    animation-name: loaderAnimate;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
+@keyframes loaderAnimate {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
